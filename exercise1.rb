@@ -12,7 +12,23 @@
   puts "Do you like drama? \n yes or no?"
   drama-choice = gets.chomp
 
+  if documenatary-choice == "yes"
+    puts "You should watch #{documenatary}"
+  else
 
+    if comedy-choice == "yes" && drama-choice == "yes"
+      puts "sounds you could watch both #{comedy} and #{drama}"
+    elsif comedy-choice == "yes"
+      puts "I recommend you should watch #{comedy}"
+
+    elsif drama-choice == "yes"
+      puts "i suggest you should watch #{drama}"
+
+    else
+      puts "you are out of luck buddy, just read #{book}"  
+    end
+
+  end
 
 
 
