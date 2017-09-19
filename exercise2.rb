@@ -23,6 +23,18 @@ elsif comedy_rating >= 4
 
 elsif drama_rating >= 4
 
-else  
+elsif drama_rating < 4 && comedy_rating < 4 && documentary_rating < 4
 
+  if comedy_rating > drama_rating && comedy_rating > documentary_rating
+    puts "you should watch #{documentary}"
+
+  elsif drama_rating > comedy_rating && drama_rating > documentary_rating
+    puts "you should watch #{drama}"
+
+  else
+    puts "you should watch #{comedy}"
+  end
+
+else
+  
 end
